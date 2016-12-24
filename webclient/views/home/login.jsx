@@ -8,6 +8,7 @@ import Dialog from 'material-ui/Dialog';
 import {   hashHistory } from 'react-router';
 import axios from 'axios';
 
+//dialog window with login credentials and error msgs
 export default class Login extends React.Component{
 	constructor(){
     super();

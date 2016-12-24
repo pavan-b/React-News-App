@@ -7,7 +7,7 @@ export default class Home extends React.Component {
     super(props);
     
   }
-		
+//display all the components when clicked along with the navheader component making it always available
 	render() 
 	{
 		return ( <div>

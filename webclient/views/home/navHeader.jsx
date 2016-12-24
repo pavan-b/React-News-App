@@ -27,7 +27,8 @@ export default class NavHeader extends React.Component {
   drawDrawer =()=>{
     this.setState({openDrawer: !(this.state.openDrawer)})
   }
-
+ 
+//if lable is login the open the dialog or logout 
   drawDialog = ()=>{
     if(this.state.lable == 'login'){
         hashHistory.push("/login");
@@ -61,7 +62,7 @@ export default class NavHeader extends React.Component {
     "position":"fixed"
   };  
 
-//change the login lable
+//change the login lable according the login status
   axios.get('http://localhost:8080/data/status')
              .then( (response) =>{  
                          if(response.data){

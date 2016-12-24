@@ -4,7 +4,7 @@ var news = require('../model/dbConfig');
 
 var router = express.Router();
 
-//
+//valididator function that sends boolean value on the login status for route protection
 function isAuthenticate(req, res, next){
 	console.log("inside isAuthenticated");
     if (req.isAuthenticated()){      
@@ -14,7 +14,7 @@ function isAuthenticate(req, res, next){
     }
 }
 
-//
+//valididator function that sends boolean value on the login status for route protection
 function save(req, res, next){	
     if (req.isAuthenticated()){       
         
@@ -41,7 +41,7 @@ router.get('/status', function(req, res, next) {
 
 //logout route
 router.get('/logout', function(req, res, next) {
-	req.logout();
+	//req.logout();
 	req.session.destroy();
 	res.send(true)	
 });

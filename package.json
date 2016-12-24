@@ -1,5 +1,5 @@
 {
-  "name": "react-webapp-boilerplate",
+  "name": "News-app",
   "version": "1.0.0",
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js",
